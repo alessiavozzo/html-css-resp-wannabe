@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -128,58 +129,82 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+/* 768+ */
 
- /* 480 */
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+    .container{
+        max-width: 100%;
+    }
+}
 
- @media screen and (max-width: 480px) {
 
-        /* header */
-    h1{
+/* 480-768 */
+
+@media screen and (max-width: 768px) {
+
+    /* common */
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+
+/* 480 */
+
+@media screen and (max-width: 480px) {
+
+    /* header */
+    h1 {
         margin-bottom: 2rem;
     }
 
-        /* common */
-    .container{
+    /* common */
+    .container {
         max-width: 100%;
         padding: 2rem;
     }
-        
-    .row{
+
+    .row {
         flex-wrap: wrap;
     }
 
-    .col{
+    .col {
         padding-bottom: 3rem;
     }
 
-        /* lessons+steps */
-    .lessons .col, .steps .col{
+    /* lessons+steps */
+    .lessons .col,
+    .steps .col {
         width: 100%;
     }
 
-    .steps{
+    .steps {
         margin: 0;
         padding-bottom: 0;
     }
 
-        /* why us */
-    .why-us{
+    /* why us */
+    .why-us {
         background-color: rgba(30, 25, 25, 1);
         margin-bottom: 0;
         padding-top: 3rem;
 
-        & h2, img{
+        & h2,
+        img {
             padding: 0 2rem;
         }
     }
 
-    .why-us .row{
-        flex-direction: column;;
-        
-        & .col-left, .col-right{
+    .why-us .row {
+        flex-direction: column;
+        ;
+
+        & .col-left,
+        .col-right {
             width: 100%;
         }
     }
 
-    
- }
+
+}
